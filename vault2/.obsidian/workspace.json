@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "f23dca1827eb7366",
+    "type": "split",
+    "children": [
+      {
+        "id": "ae0f1cef16636d50",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "067c2d991d327274",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4df15dad1e1f0e0f",
+    "type": "split",
+    "children": [
+      {
+        "id": "6183d4cf4ca64694",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b2a13a0f218b2fb8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "74d059b4b5a1a985",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0917f4be7d1ae33b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bb08f49a81bb16d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "da66ebfd834dc333",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d8c85d8a7636ba79",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "WSL Setup.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for WSL Setup"
+            }
+          },
+          {
+            "id": "7bfb0f46ebf376d2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "WSL Setup.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from WSL Setup"
+            }
+          },
+          {
+            "id": "cdd1a2248640e034",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c65937bd0329ca57",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "b245e9197cf1a60c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "WSL Setup.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of WSL Setup"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "067c2d991d327274",
+  "lastOpenFiles": [
+    "Papers to Read.md",
+    "MDAnalysis.md",
+    "GEOCK.md",
+    "About Me.md",
+    "WSL Setup.md",
+    "RDKit.md",
+    "Binding Affinity Prediction Model.md",
+    "AMD GPU ROCm.md",
+    "ProLIF.md",
+    "Vinardo.md",
+    "n8n Automation.md",
+    "AutoDock Vina.md",
+    "Obsidian Setup.md",
+    "Untitled.canvas"
+  ]
+}

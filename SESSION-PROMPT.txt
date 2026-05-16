@@ -1,0 +1,31 @@
+# Copy this to start a new OpenCode session:
+
+---
+
+I need help continuing the GEOCK v2 binding affinity prediction project.
+
+## Current Status
+- **CASF-2007 R:** 0.8766
+- **CASF-2013 R:** 0.8696  
+- **Model:** geock_deep_trees_final.pkl (CV R=0.8432)
+- **Training data:** 39,507 samples
+
+## Key Files
+- Model: /home/chow/autoresearch/geock_deep_trees_final.pkl
+- Engine: /home/chow/autoresearch/geock_engine.py
+- Scripts: /home/chow/autoresearch/*.py
+- Documentation: C:\Users\yakka\Downloads\Geockk\
+- Results: C:\Users\yakka\Desktop\CASF_Results\
+
+## Quick Commands
+```bash
+cd /home/chow/autoresearch
+python geock_engine.py --smiles "CCO"
+python casf2007_validation.py
+```
+
+## Next Steps to Consider
+1. Retrain without CASF PDBs for true external validation
+2. Test on CASF-2016 (download from figshare)
+3. Write paper for JCIM
+4. Analyze failure cases

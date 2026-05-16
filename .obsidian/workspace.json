@@ -1,0 +1,193 @@
+{
+  "main": {
+    "id": "160ceeaf9dda9f4f",
+    "type": "split",
+    "children": [
+      {
+        "id": "0b5168b7f37b138d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e17ae53464e2abad",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0498ef0fc4b5fe7d",
+    "type": "split",
+    "children": [
+      {
+        "id": "191737625e3f5fb0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "744d1b726d49723f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f49d073487e25f38",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "17690a8aceae86bf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b336e597cbbc319d",
+    "type": "split",
+    "children": [
+      {
+        "id": "d6fc59fae7780f31",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd9ec9de118344ea",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "GEOCK-v2-Complete-Documentation.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for GEOCK-v2-Complete-Documentation"
+            }
+          },
+          {
+            "id": "3fe6288595493ab0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "GEOCK-v2-Complete-Documentation.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from GEOCK-v2-Complete-Documentation"
+            }
+          },
+          {
+            "id": "915bd80cc3716531",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "856b0bad82858726",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "df0bbd804426da78",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "GEOCK-v2-Complete-Documentation.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of GEOCK-v2-Complete-Documentation"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "e17ae53464e2abad",
+  "lastOpenFiles": [
+    "GEOCK-v2-Complete-Documentation.md",
+    "GEOCK-QuickRef.md",
+    "CASF-2007-Verification-Report.md",
+    "Welcome.md",
+    "OPENCODE-SESSION-RESUME.md",
+    "CASF_Results/casf2007_predictions.csv",
+    "CASF_Results/casf2007_metrics.json",
+    "CASF_Results"
+  ]
+}
