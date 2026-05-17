@@ -1,0 +1,48 @@
+#!/bin/bash
+# GEOCK v2 Quick Commands
+
+cd /home/chow/autoresearch
+
+case "$1" in
+    "")
+        echo "=========================================="
+        echo "  GEOCK v2 - Binding Affinity Prediction"
+        echo "=========================================="
+        echo ""
+        echo "Commands:"
+        echo "  geock              - Show this help"
+        echo "  geock help         - Show quick reference"
+        echo "  geock predict SMILES - Predict binding affinity"
+        echo "  geock casf         - Run CASF validation"
+        echo "  geock train        - Train model"
+        echo "  geock docs          - Open documentation folder"
+        echo ""
+        echo "Examples:"
+        echo "  geock predict CCO"
+        echo "  geock predict 'CC(=O)Oc1ccccc1C(=O)O'"
+        ;;
+    "help")
+        cat /mnt/c/Users/yakka/Downloads/Geockk/GEOCK-QuickRef.md
+        ;;
+    "predict")
+        if [ -z "$2" ]; then
+            echo "Usage: geock predict SMILES"
+            echo "Example: geock predict CCO"
+        else
+            python geock_engine.py --smiles "$2"
+        fi
+        ;;
+    "casf")
+        python casf2007_validation.py
+        ;;
+    "train")
+        python train_final_model.py
+        ;;
+    "docs")
+        cd /mnt/c/Users/yakka/Downloads/Geockk
+        ls -la
+        ;;
+    *)
+        python3 cli.py "$@"
+        ;;
+esac

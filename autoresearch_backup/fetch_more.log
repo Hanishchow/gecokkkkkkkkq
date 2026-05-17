@@ -1,0 +1,63 @@
+[01:23:43] Explicit valence for atom # 1 N, 5, is greater than permitted
+[01:23:48] Explicit valence for atom # 10 N, 5, is greater than permitted
+[01:23:49] Explicit valence for atom # 16 N, 5, is greater than permitted
+[01:23:51] Explicit valence for atom # 3 N, 5, is greater than permitted
+[01:23:56] Explicit valence for atom # 1 N, 5, is greater than permitted
+Existing PDB files: 1000
+Previous features: 998 compounds
+New PDB IDs to download: 6393
+
+Processing batch of 3000 compounds...
+  Batch1 Downloaded: 200, Failed: 0
+  Batch1 Downloaded: 400, Failed: 0
+  Batch1 Downloaded: 600, Failed: 0
+  Batch1 Downloaded: 800, Failed: 0
+  Batch1 Downloaded: 1000, Failed: 0
+  Batch1 Downloaded: 1200, Failed: 0
+  Batch1 Downloaded: 1400, Failed: 0
+  Batch1 Downloaded: 1599, Failed: 1
+  Batch1 Downloaded: 1799, Failed: 1
+  Batch1 Downloaded: 1999, Failed: 1
+  Batch1 Downloaded: 2199, Failed: 1
+  Batch1 Downloaded: 2399, Failed: 1
+  Batch1 Downloaded: 2598, Failed: 2
+  Batch1 Downloaded: 2797, Failed: 3
+  Batch1 Downloaded: 2997, Failed: 3
+  Batch1 Processed: 100
+  Batch1 Processed: 200
+  Batch1 Processed: 300
+  Batch1 Processed: 400
+  Batch1 Processed: 500
+  Batch1 Processed: 600
+  Batch1 Processed: 700
+  Batch1 Processed: 800
+  Batch1 Processed: 900
+  Batch1 Processed: 1000
+  Batch1 Processed: 1100
+  Batch1 Processed: 1200
+  Batch1 Processed: 1300
+  Batch1 Processed: 1400
+  Batch1 Processed: 1500
+  Batch1 Processed: 1600
+  Batch1 Processed: 1700
+  Batch1 Processed: 1800
+  Batch1 Processed: 1900
+  Batch1 Processed: 2000
+  Batch1 Processed: 2100
+  Batch1 Processed: 2200
+  Batch1 Processed: 2300
+  Batch1 Processed: 2400
+  Batch1 Processed: 2500
+  Batch1 Processed: 2600
+  Batch1 Processed: 2700
+  Batch1 Processed: 2800
+  Batch1 Processed: 2900
+  Batch1 Final: 2997 downloaded, 2992 processed, 3 failed
+Time: 274s
+
+Total features: 3990 compounds
+
+Quick training check...
+LOO-R with 3990 compounds: 0.5913
+
+Done!

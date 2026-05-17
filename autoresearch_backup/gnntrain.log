@@ -1,0 +1,26 @@
+Loading data...
+Using 5000 compounds
+FEATURE_DIM=20
+Building graphs...
+  1000/5000, 962 valid
+  2000/5000, 1928 valid
+  3000/5000, 2897 valid
+  4000/5000, 3849 valid
+  5000/5000, 4808 valid
+Valid: 4808
+
+Training GNN...
+Ep  5: loss=3.4154, val_R=0.2743, test_R=0.3264, test_MAE=1.49
+Ep 10: loss=3.4114, val_R=0.3126, test_R=0.3697, test_MAE=1.46
+Ep 15: loss=3.2075, val_R=0.3541, test_R=0.4013, test_MAE=1.52
+Ep 20: loss=3.1444, val_R=0.3910, test_R=0.4391, test_MAE=1.43
+Ep 25: loss=3.1355, val_R=0.4183, test_R=0.4753, test_MAE=1.36
+Ep 30: loss=3.0193, val_R=0.4386, test_R=0.4941, test_MAE=1.36
+Ep 35: loss=2.9526, val_R=0.4508, test_R=0.5051, test_MAE=1.46
+Ep 40: loss=2.9610, val_R=0.4532, test_R=0.5118, test_MAE=1.32
+Ep 45: loss=2.9650, val_R=0.4587, test_R=0.5205, test_MAE=1.36
+Ep 50: loss=2.9334, val_R=0.4651, test_R=0.5284, test_MAE=1.34
+Ep 55: loss=2.9330, val_R=0.4650, test_R=0.5343, test_MAE=1.30
+Ep 60: loss=3.0156, val_R=0.4658, test_R=0.5345, test_MAE=1.30
+Ep 65: loss=3.0020, val_R=0.4688, test_R=0.5395, test_MAE=1.32
+Ep 70: loss=2.8219, val_R=0.4655, test_R=0.5399, test_MAE=1.29

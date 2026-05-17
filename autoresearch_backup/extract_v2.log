@@ -1,0 +1,84 @@
+============================================================
+ENHANCED FEATURE EXTRACTION
+============================================================
+Workers: 7
+
+Loading LP-PDBBind data...
+LP-PDBBind: 19443 records
+Existing enhanced: 98 records
+To process: 19345 new records
+
+Extracting features for 19345 records...
+[20:40:31] Explicit valence for atom # 1 N, 5, is greater than permitted
+[20:40:34] Explicit valence for atom # 1 N, 5, is greater than permitted
+[20:40:35] Explicit valence for atom # 8 N, 5, is greater than permitted
+[20:40:35] Explicit valence for atom # 15 P, 7, is greater than permitted
+[20:40:36] Explicit valence for atom # 1 N, 5, is greater than permitted
+[20:40:37] Explicit valence for atom # 1 N, 5, is greater than permitted
+[20:40:38] Explicit valence for atom # 1 N, 5, is greater than permitted
+[20:40:38] Explicit valence for atom # 17 N, 5, is greater than permitted
+[20:40:39] Explicit valence for atom # 10 N, 5, is greater than permitted
+[20:40:39] Explicit valence for atom # 16 N, 5, is greater than permitted
+[20:40:40] Explicit valence for atom # 3 N, 5, is greater than permitted
+[20:40:41] Explicit valence for atom # 7 Cl, 3, is greater than permitted
+[20:40:41] Explicit valence for atom # 1 N, 5, is greater than permitted
+[20:40:42] Explicit valence for atom # 9 N, 5, is greater than permitted
+[20:40:42] Explicit valence for atom # 17 N, 6, is greater than permitted
+[20:40:43] Explicit valence for atom # 1 N, 5, is greater than permitted
+[20:40:43] Explicit valence for atom # 17 N, 6, is greater than permitted
+[20:40:44] Explicit valence for atom # 17 N, 5, is greater than permitted
+[20:40:45] Explicit valence for atom # 17 N, 5, is greater than permitted
+[20:40:45] Explicit valence for atom # 17 N, 5, is greater than permitted
+[20:40:45] Explicit valence for atom # 1 N, 5, is greater than permitted
+[20:40:47] Explicit valence for atom # 17 N, 5, is greater than permitted
+[20:40:47] Explicit valence for atom # 29 N, 5, is greater than permitted
+[20:40:48] Explicit valence for atom # 42 N, 5, is greater than permitted
+[20:40:49] Explicit valence for atom # 17 N, 5, is greater than permitted
+[20:40:50] Explicit valence for atom # 17 N, 5, is greater than permitted
+[20:40:50] Explicit valence for atom # 24 N, 5, is greater than permitted
+[20:40:51] Explicit valence for atom # 1 N, 5, is greater than permitted
+[20:40:51] Explicit valence for atom # 1 N, 5, is greater than permitted
+[20:40:51] Explicit valence for atom # 30 N, 5, is greater than permitted
+[20:40:52] Explicit valence for atom # 17 N, 5, is greater than permitted
+[20:40:52] Explicit valence for atom # 1 N, 5, is greater than permitted
+[20:40:52] Explicit valence for atom # 6 B, 5, is greater than permitted
+[20:40:52] Explicit valence for atom # 10 Sb, 7, is greater than permitted
+  1000/19345 | OK: 985 | FAIL: 15 | ETA: 1.0 min
+  2000/19345 | OK: 1964 | FAIL: 36 | ETA: 0.6 min
+  3000/19345 | OK: 2951 | FAIL: 49 | ETA: 0.4 min
+  4000/19345 | OK: 3941 | FAIL: 59 | ETA: 0.4 min
+  5000/19345 | OK: 4917 | FAIL: 83 | ETA: 0.3 min
+  6000/19345 | OK: 5902 | FAIL: 98 | ETA: 0.3 min
+  7000/19345 | OK: 6879 | FAIL: 121 | ETA: 0.3 min
+  8000/19345 | OK: 7853 | FAIL: 147 | ETA: 0.2 min
+  9000/19345 | OK: 8838 | FAIL: 162 | ETA: 0.2 min
+  10000/19345 | OK: 9824 | FAIL: 176 | ETA: 0.2 min
+  11000/19345 | OK: 10801 | FAIL: 199 | ETA: 0.2 min
+  12000/19345 | OK: 11780 | FAIL: 220 | ETA: 0.1 min
+  13000/19345 | OK: 12761 | FAIL: 239 | ETA: 0.1 min
+  14000/19345 | OK: 13746 | FAIL: 254 | ETA: 0.1 min
+  15000/19345 | OK: 14725 | FAIL: 275 | ETA: 0.1 min
+  16000/19345 | OK: 15709 | FAIL: 291 | ETA: 0.1 min
+  17000/19345 | OK: 16695 | FAIL: 305 | ETA: 0.0 min
+  18000/19345 | OK: 17672 | FAIL: 328 | ETA: 0.0 min
+  19000/19345 | OK: 18651 | FAIL: 349 | ETA: 0.0 min
+
+Saving 19087 records to /home/chow/.cache/geock_autoresearch/lp_features_enhanced.pkl...
+
+============================================================
+SUMMARY
+============================================================
+Processed: 18989
+Failed: 356
+Success rate: 98.2%
+Total records: 19087
+Time: 0.4 minutes
+
+Feature dimensions:
+  Total: 982
+  ECFP: 512
+  MACCS: 167
+  FCFP: 256
+  RDKit: 47
+
+Output: /home/chow/.cache/geock_autoresearch/lp_features_enhanced.pkl

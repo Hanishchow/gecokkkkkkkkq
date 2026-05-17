@@ -1,0 +1,29 @@
+{
+  "model_type": "ensemble",
+  "train_r": 0.7424076655644325,
+  "val_r": 0.6962981468638659,
+  "test_r": 0.6909924236666825,
+  "train_mae": 0.991987772375023,
+  "val_mae": 1.0629438820602948,
+  "test_mae": 1.0659027752017352,
+  "gap": 0.05141524189775004,
+  "cv_r": 0.6966547192769783,
+  "cv_std": 0.004621981789523191,
+  "config": {
+    "k": 500,
+    "n_estimators": 200,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "reg_alpha": 1.0,
+    "reg_lambda": 5.0,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "seed": 42,
+    "ensemble_weight": 0.8,
+    "ridge_alpha": 100.0
+  },
+  "n_train": 27656,
+  "n_val": 3950,
+  "n_test": 7901,
+  "timestamp": "2026-04-05T19:29:57.739774"
+}

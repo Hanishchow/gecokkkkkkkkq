@@ -1,0 +1,15 @@
+[
+  "gaussian_1.5A", "gaussian_3.0A", "gaussian_5.0A",
+  "best_contact", "relative_ideal", "mean_distance", "distance_std", "repulsion_sum",
+  "contact_frac_2A", "contact_frac_3A", "contact_frac_4A", "contact_frac_5A", "contact_frac_6A", "contact_frac_8A",
+  "lig_min_dist", "lig_mean_dist", "lig_std_dist", "lig_p25_dist", "lig_p50_dist", "lig_p75_dist",
+  "rec_min_dist", "rec_mean_dist", "rec_std_dist",
+  "lig_hydrophobic_frac", "lig_hbd_frac", "lig_hba_frac", "lig_aromatic_frac", "lig_basic_frac", "lig_acidic_frac", "lig_size_norm",
+  "rec_carbon_frac", "rec_polar_frac", "rec_size_norm",
+  "contact_score", "hydrophobic_score", "hbond_score",
+  "electro_solvent_exp", "electro_net_charge", "electro_complementarity",
+  "geo_centroid_dist", "geo_sin", "geo_cos",
+  "dist_hist_0-1A", "dist_hist_1-2A", "dist_hist_2-3A", "dist_hist_3-4A", "dist_hist_4-5A",
+  "dist_hist_5-6A", "dist_hist_6-7A", "dist_hist_7-8A", "dist_hist_8-9A", "dist_hist_9-10A",
+  "dist_p5", "dist_p10", "dist_p25", "dist_p50", "dist_p75", "dist_p90", "dist_p95"
+]

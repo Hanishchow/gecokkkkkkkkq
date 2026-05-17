@@ -1,0 +1,24 @@
+=== ChEMBL Data Mining ===
+Trying BindingDB direct download...
+  BindingDB_All_202301.tsv.gz: 404 (801 bytes)
+  BindingDB_202401.tsv.gz: 404 (797 bytes)
+  BindingDB_All_202201.tsv.gz: 404 (? bytes)
+
+Trying ChEMBL molecule fetch...
+Got 10 molecules, total: ?
+Keys: ['atc_classifications', 'availability_type', 'biotherapeutic', 'black_box_warning', 'chemical_probe', 'chirality', 'cross_references', 'dosed_ingredient', 'first_approval', 'first_in_class', 'helm_notation', 'inorganic_flag', 'max_phase', 'molecule_chembl_id', 'molecule_hierarchy', 'molecule_properties', 'molecule_structures', 'molecule_synonyms', 'molecule_type', 'natural_product', 'oral', 'orphan', 'parenteral', 'polymer_flag', 'pref_name', 'prodrug', 'structure_type', 'therapeutic_flag', 'topical', 'usan_stem', 'usan_stem_definition', 'usan_substem', 'usan_year', 'veterinary', 'withdrawn_flag']
+  CHEMBL2: COc1cc2nc(N3CCN(C(=O)c4ccco4)CC3)nc(N)c2cc1OC
+  CHEMBL3: CN1CCC[C@H]1c1cccnc1
+  CHEMBL4: CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23
+
+Trying ChEMBL activity fetch (100 records)...
+  Offset 0: 1000 records, total: ?
+  Offset 1000: 1000 records, total: ?
+  Offset 2000: 1000 records, total: ?
+  Offset 3000: 1000 records, total: ?
+Continuing ChEMBL fetch...
+Fetching offset 0... 1000 records, total=1000
+Fetching offset 1000... 1000 records, total=2000
+Fetching offset 2000... 1000 records, total=3000
+Fetching offset 3000... 1000 records, total=4000
+Fetching offset 4000... 

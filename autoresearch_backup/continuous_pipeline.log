@@ -1,0 +1,128 @@
+Loading LP-PDBBind CSV...
+PDB files: 4497 downloaded, 2896 to download
+High quality LP-PDBBind total: 7393
+
+=== Round 1: Downloading 500 PDBs ===
+  R1: 498 ok, 2 failed
+  R1: downloaded=498, failed=2
+  R1: 200 processed
+  R1: 400 processed
+  R1: extracted=498
+  Time: 53s
+  Merged: 4988 total (498 new)
+
+=== Training ===
+  Training on 4988 compounds...
+  Best: ke=250, alpha=100.0, LOO-R=0.6237, R2_cv=0.3731
+  Model saved: /home/chow/autoresearch/geock_model_all.pkl
+  Predictions saved: /home/chow/autoresearch/results_all.tsv
+
+Remaining: 2398 PDBs to download
+Pausing 5s before next batch...
+
+=== Round 2: Downloading 500 PDBs ===
+  R2: 497 ok, 3 failed
+  R2: downloaded=497, failed=3
+  R2: 200 processed
+  R2: 400 processed
+  R2: extracted=497
+  Time: 59s
+  Merged: 5485 total (497 new)
+
+=== Training ===
+  Training on 5485 compounds...
+  Best: ke=200, alpha=100.0, LOO-R=0.6179, R2_cv=0.3664
+  Model saved: /home/chow/autoresearch/geock_model_all.pkl
+  Predictions saved: /home/chow/autoresearch/results_all.tsv
+
+Remaining: 1901 PDBs to download
+Pausing 5s before next batch...
+
+=== Round 3: Downloading 500 PDBs ===
+  R3: 500 ok, 0 failed
+  R3: downloaded=500, failed=0
+  R3: 200 processed
+  R3: 400 processed
+  R3: extracted=500
+  Time: 55s
+  Merged: 5985 total (500 new)
+
+=== Training ===
+  Training on 5985 compounds...
+  Best: ke=250, alpha=100.0, LOO-R=0.6175, R2_cv=0.3609
+  Model saved: /home/chow/autoresearch/geock_model_all.pkl
+  Predictions saved: /home/chow/autoresearch/results_all.tsv
+
+Remaining: 1401 PDBs to download
+Pausing 5s before next batch...
+
+=== Round 4: Downloading 500 PDBs ===
+  R4: 498 ok, 2 failed
+  R4: downloaded=498, failed=2
+  R4: 200 processed
+  R4: 400 processed
+  R4: extracted=498
+  Time: 65s
+  Merged: 6483 total (498 new)
+
+=== Training ===
+  Training on 6483 compounds...
+  Best: ke=250, alpha=100.0, LOO-R=0.6132, R2_cv=0.3546
+  Model saved: /home/chow/autoresearch/geock_model_all.pkl
+  Predictions saved: /home/chow/autoresearch/results_all.tsv
+
+Remaining: 903 PDBs to download
+Pausing 5s before next batch...
+
+=== Round 5: Downloading 500 PDBs ===
+  R5: 499 ok, 1 failed
+  R5: downloaded=499, failed=1
+[02:03:48] Explicit valence for atom # 1 N, 5, is greater than permitted
+  R5: 200 processed
+  R5: 400 processed
+  R5: extracted=498
+  Time: 60s
+  Merged: 6981 total (498 new)
+
+=== Training ===
+  Training on 6981 compounds...
+  Best: ke=250, alpha=100.0, LOO-R=0.6119, R2_cv=0.3559
+  Model saved: /home/chow/autoresearch/geock_model_all.pkl
+  Predictions saved: /home/chow/autoresearch/results_all.tsv
+
+Remaining: 404 PDBs to download
+Pausing 5s before next batch...
+
+=== Round 6: Downloading 404 PDBs ===
+  R6: downloaded=403, failed=1
+[02:07:43] Explicit valence for atom # 6 B, 5, is greater than permitted
+  R6: 200 processed
+  R6: 400 processed
+  R6: extracted=402
+  Time: 53s
+  Merged: 7383 total (402 new)
+
+=== Training ===
+  Training on 7383 compounds...
+  Best: ke=250, alpha=100.0, LOO-R=0.6146, R2_cv=0.3596
+  Model saved: /home/chow/autoresearch/geock_model_all.pkl
+  Predictions saved: /home/chow/autoresearch/results_all.tsv
+
+Remaining: 1 PDBs to download
+Pausing 5s before next batch...
+
+=== Round 7: Downloading 1 PDBs ===
+  R7: downloaded=1, failed=0
+  R7: extracted=1
+  Time: 9s
+  Merged: 7384 total (1 new)
+
+=== Training ===
+  Training on 7384 compounds...
+  Best: ke=250, alpha=100.0, LOO-R=0.6143, R2_cv=0.3590
+  Model saved: /home/chow/autoresearch/geock_model_all.pkl
+  Predictions saved: /home/chow/autoresearch/results_all.tsv
+
+Remaining: 0 PDBs to download
+
+=== ALL DONE ===

@@ -1,0 +1,8 @@
+Loading LP-PDBBind and features...
+LP-PDBBind: 19443 entries
+Features: 7384 compounds
+Protein sequences available: 19443
+Computing protein features...
+X_prot: (7384, 69), X_ecfp: (7384, 512), y: (7384,)
+
+--- Protein only ---

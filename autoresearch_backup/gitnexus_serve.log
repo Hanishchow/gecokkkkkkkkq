@@ -1,0 +1,3 @@
+npm warn exec The following package was not found and will be installed: gitnexus@1.6.3
+npm warn skipping integrity check for git dependency ssh://git@github.com/UserNobody14/tree-sitter-dart.git
+npm warn deprecated boolean@3.2.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.

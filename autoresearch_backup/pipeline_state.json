@@ -1,0 +1,21 @@
+{
+  "step": "combine_data",
+  "started_at": "2026-04-05T19:24:14.706162",
+  "completed_at": "2026-04-05T19:24:17.172629",
+  "records_processed": 15440,
+  "records_failed": 0,
+  "errors": [],
+  "metadata": {
+    "total_records": 15440,
+    "sources": {
+      "unknown": 7465,
+      "lp_pdbbind": 7975
+    },
+    "affinity_stats": {
+      "mean": 6.416998704663212,
+      "std": 1.817639841459955,
+      "min": 0.4,
+      "max": 15.0
+    }
+  }
+}

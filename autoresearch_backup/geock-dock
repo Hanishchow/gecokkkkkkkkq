@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /home/chow/autoresearch
+python3 dock.py "$@"

@@ -1,0 +1,2 @@
+Use Plotly for interactive 3D: plotly.io.to_html(fig)
+Run: pip install plotly

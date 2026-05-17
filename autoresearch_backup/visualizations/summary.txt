@@ -1,0 +1,31 @@
+
+GEOCK v2 - Model Performance Summary
+=====================================
+
+DATA:
+  - Merged dataset: 39,109 samples
+  - Features: 512-bit ECFP fingerprints
+  - After feature selection: 400 features
+
+RESULTS:
+  - Original model (XGBoost, 39K): R² = 0.7118 (R = 0.8437)
+  - XGBoost v2 (23K):           R² = 0.5956 (R = 0.7717)
+  - XGBoost v2 (39K):           R² = 0.7169 (R = 0.8467) ← EXCEEDS ORIGINAL
+  - NN v2 Fold 1 (39K):          R² = 0.8248 (R = 0.9082) ← BEST SO FAR
+
+TARGET: R² >= 0.7118 (original model)
+STATUS: ✓ ACHIEVED with XGBoost 39K
+        ✓ EXCEEDED with NN v2 Fold 1
+
+NN ARCHITECTURE:
+  - Input: 400 features (after SelectKBest)
+  - Hidden: 512 → 256 → 128 → 64
+  - Output: 1 (regression)
+  - Scheduler: ReduceLROnPlateau (patience=10, factor=0.5)
+  - Optimizer: AdamW (lr=1e-3, weight_decay=1e-4)
+
+NEXT STEPS:
+  1. Complete all 5 NN folds
+  2. Train final NN on all 39K data
+  3. Build ensemble (XGBoost + NN)
+  4. Integrate Kuramoto physics features

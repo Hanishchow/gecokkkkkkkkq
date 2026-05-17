@@ -1,0 +1,1202 @@
+[
+  {
+    "pdb_id": "1a1e",
+    "experimental_affinity": -8.3,
+    "center": {
+      "x": 44.565176470588234,
+      "y": 8.497235294117647,
+      "z": 23.871352941176468
+    },
+    "ligand_id": "PTR",
+    "n_atoms": 17,
+    "smiles": "c1cc(ccc1CC(C(=O)O)N)OP(=O)(O)O"
+  },
+  {
+    "pdb_id": "3phy",
+    "experimental_affinity": -9.2,
+    "center": {
+      "x": -5.730174208144796,
+      "y": -6.249671945701358,
+      "z": 1.2385475113122175
+    },
+    "ligand_id": "HC4",
+    "n_atoms": 442,
+    "smiles": "c1cc(ccc1C=CC(=O)O)O"
+  },
+  {
+    "pdb_id": "1stp",
+    "experimental_affinity": -8.9,
+    "center": {
+      "x": 11.117625,
+      "y": 1.6800625,
+      "z": -10.7545625
+    },
+    "ligand_id": "BTN",
+    "n_atoms": 16,
+    "smiles": "C1C2C(C(S1)CCCCC(=O)O)NC(=O)N2"
+  },
+  {
+    "pdb_id": "1mld",
+    "experimental_affinity": -7.5,
+    "center": {
+      "x": 71.66276923076921,
+      "y": 62.651153846153846,
+      "z": 12.742384615384616
+    },
+    "ligand_id": "CIT",
+    "n_atoms": 13,
+    "smiles": "C(C(=O)O)C(CC(=O)O)(C(=O)O)O"
+  },
+  {
+    "pdb_id": "2tsc",
+    "experimental_affinity": -8.6,
+    "center": {
+      "x": 14.458942857142857,
+      "y": 14.8442,
+      "z": 34.81305714285714
+    },
+    "ligand_id": "CB3",
+    "n_atoms": 35,
+    "smiles": "C#CCN(Cc1ccc2c(c1)C(=O)N=C(N2)N)c3ccc(cc3)C(=O)NC(CCC(=O)O)C(=O)O"
+  },
+  {
+    "pdb_id": "1tmn",
+    "experimental_affinity": -8.5,
+    "center": {
+      "x": 37.049771428571425,
+      "y": 39.222228571428566,
+      "z": -4.2303428571428565
+    },
+    "ligand_id": "0ZN",
+    "n_atoms": 35,
+    "smiles": "CC(C)CC(C(=O)NC(Cc1c[nH]c2c1cccc2)C(=O)O)NC(CCc3ccccc3)C(=O)O"
+  },
+  {
+    "pdb_id": "1iep",
+    "experimental_affinity": -8.2,
+    "center": {
+      "x": 15.61389189189189,
+      "y": 53.38013513513513,
+      "z": 15.454837837837836
+    },
+    "ligand_id": "STI",
+    "n_atoms": 37,
+    "smiles": "Cc1ccc(cc1Nc2nccc(n2)c3cccnc3)NC(=O)c4ccc(cc4)CN5CCN(CC5)C"
+  },
+  {
+    "pdb_id": "1hvj",
+    "experimental_affinity": -8.8,
+    "center": {
+      "x": 5.320051282051281,
+      "y": -1.4972735042735044,
+      "z": 14.149786324786323
+    },
+    "ligand_id": "A78",
+    "n_atoms": 117,
+    "smiles": "CC(C)C(C(=O)NC(Cc1ccccc1)CC(C(Cc2ccccc2)NC(=O)C(C(C)C)NC(=O)N(C)Cc3cccc[nH+]3)O)NC(=O)N(C)Cc4cccc[nH+]4"
+  },
+  {
+    "pdb_id": "1acm",
+    "experimental_affinity": -9.4,
+    "center": {
+      "x": 43.4258125,
+      "y": 29.830625,
+      "z": 17.296625
+    },
+    "ligand_id": "PAL",
+    "n_atoms": 16,
+    "smiles": "C(C(C(=O)O)NC(=O)CP(=O)(O)O)C(=O)O"
+  },
+  {
+    "pdb_id": "1atn",
+    "experimental_affinity": -8.3,
+    "center": {
+      "x": 91.77793548387098,
+      "y": 50.98483870967741,
+      "z": 72.55632258064516
+    },
+    "ligand_id": "ATP",
+    "n_atoms": 31,
+    "smiles": "c1nc(c2c(n1)n(cn2)C3C(C(C(O3)COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O)O)N"
+  },
+  {
+    "pdb_id": "1avn",
+    "experimental_affinity": -8.9,
+    "center": {
+      "x": -2.789875,
+      "y": 4.780749999999999,
+      "z": 10.377500000000001
+    },
+    "ligand_id": "HSM",
+    "n_atoms": 8,
+    "smiles": "c1c(nc[nH]1)CCN"
+  },
+  {
+    "pdb_id": "1axo",
+    "experimental_affinity": -7.4,
+    "center": {
+      "x": 4.836302631578947,
+      "y": 0.2886885964912281,
+      "z": 6.676631578947368
+    },
+    "ligand_id": "BAP",
+    "n_atoms": 228,
+    "smiles": "c1cc2ccc3cc4c(c5c3c2c(c1)cc5)CC(C(C4O)O)O"
+  },
+  {
+    "pdb_id": "1azm",
+    "experimental_affinity": -10.1,
+    "center": {
+      "x": 34.27084615384615,
+      "y": 16.432076923076924,
+      "z": -18.714000000000002
+    },
+    "ligand_id": "AZM",
+    "n_atoms": 13,
+    "smiles": "CC(=O)Nc1nnc(s1)S(=O)(=O)N"
+  },
+  {
+    "pdb_id": "1bbu",
+    "experimental_affinity": -9.2,
+    "center": {
+      "x": -19.586699999999997,
+      "y": 135.39079999999998,
+      "z": 40.7411
+    },
+    "ligand_id": "LYS",
+    "n_atoms": 10,
+    "smiles": "C(CC[NH3+])CC(C(=O)O)N"
+  },
+  {
+    "pdb_id": "1bmm",
+    "experimental_affinity": -7.9,
+    "center": {
+      "x": 12.60122857142857,
+      "y": 46.10668571428571,
+      "z": 20.228657142857138
+    },
+    "ligand_id": "BM2",
+    "n_atoms": 35,
+    "smiles": "c1ccc2cc(ccc2c1)S(=O)(=O)NC(CO)C(=O)N3CCCC3CNC(=O)CCCNC(=N)N"
+  },
+  {
+    "pdb_id": "1bmt",
+    "experimental_affinity": -8.6,
+    "center": {
+      "x": 29.370934782608703,
+      "y": 55.6595,
+      "z": 22.788282608695656
+    },
+    "ligand_id": "COB",
+    "n_atoms": 92,
+    "smiles": "Cc1cc2c(cc1C)n(cn2)C3C(C(C(O3)CO)OP(=O)(O)OC(C)CNC(=O)CCC4(C(C5=[N-]6C4=C(C7=[N]8[Co+2]69([N]1=C(C=C8C(C7CCC(=O)N)(C)C)C(C(C1=C(C1=[N]9C5(C(C1CCC(=O)N)(C)CC(=O)N)C)C)(C)CC(=O)N)CCC(=O)N)C)C)CC(=O)N)C)O"
+  },
+  {
+    "pdb_id": "1bra",
+    "experimental_affinity": -8.2,
+    "center": {
+      "x": 7.881333333333334,
+      "y": 49.471666666666664,
+      "z": 55.99955555555555
+    },
+    "ligand_id": "BEN",
+    "n_atoms": 9,
+    "smiles": "[H]N=C(c1ccccc1)N"
+  },
+  {
+    "pdb_id": "1cbs",
+    "experimental_affinity": -8.4,
+    "center": {
+      "x": 22.06509090909091,
+      "y": 26.28254545454546,
+      "z": 20.209363636363634
+    },
+    "ligand_id": "REA",
+    "n_atoms": 22,
+    "smiles": "CC1=C(C(CCC1)(C)C)C=CC(=CC=CC(=CC(=O)O)C)C"
+  },
+  {
+    "pdb_id": "1cgl",
+    "experimental_affinity": -9.5,
+    "center": {
+      "x": 28.000864197530866,
+      "y": 41.333827160493826,
+      "z": -1.406888888888889
+    },
+    "ligand_id": "0ED",
+    "n_atoms": 81,
+    "smiles": null
+  },
+  {
+    "pdb_id": "1cgo",
+    "experimental_affinity": -8.9,
+    "center": {
+      "x": 9.600581395348836,
+      "y": 33.71255813953489,
+      "z": 38.56216279069767
+    },
+    "ligand_id": "HEC",
+    "n_atoms": 43,
+    "smiles": "CC=C1C(=C2C=C3C(=CC)C(=C4N3[Fe]56N2C1=Cc7n5c(c(c7C)CCC(=O)O)C=C8N6C(=C4)C(=C8CCC(=O)O)C)C)C"
+  },
+  {
+    "pdb_id": "1cil",
+    "experimental_affinity": -7.6,
+    "center": {
+      "x": -4.319842105263159,
+      "y": 3.6300526315789474,
+      "z": 14.547842105263154
+    },
+    "ligand_id": "ETS",
+    "n_atoms": 19,
+    "smiles": "CCNC1CC(S(=O)(=O)c2c1cc(s2)S(=O)(=O)N)C"
+  },
+  {
+    "pdb_id": "1ciw",
+    "experimental_affinity": -8.7,
+    "center": {
+      "x": 58.33666666666666,
+      "y": 29.0476,
+      "z": 64.1632
+    },
+    "ligand_id": "NDG",
+    "n_atoms": 15,
+    "smiles": "CC(=O)NC1C(C(C(OC1O)CO)O)O"
+  },
+  {
+    "pdb_id": "1cja",
+    "experimental_affinity": -9.2,
+    "center": {
+      "x": 8.694217391304349,
+      "y": 78.29034782608696,
+      "z": 22.395869565217392
+    },
+    "ligand_id": "AMP",
+    "n_atoms": 23,
+    "smiles": "c1nc(c2c(n1)n(cn2)C3C(C(C(O3)COP(=O)(O)O)O)O)N"
+  },
+  {
+    "pdb_id": "1cmp",
+    "experimental_affinity": -8.4,
+    "center": {
+      "x": -5.290232558139535,
+      "y": 56.16083720930232,
+      "z": 112.27997674418604
+    },
+    "ligand_id": "HEM",
+    "n_atoms": 43,
+    "smiles": "Cc1c2n3c(c1CCC(=O)O)C=C4C(=C(C5=[N]4[Fe]36[N]7=C(C=C8N6C(=C5)C(=C8C)C=C)C(=C(C7=C2)C)C=C)C)CCC(=O)O"
+  },
+  {
+    "pdb_id": "1coi",
+    "experimental_affinity": -8.6,
+    "center": {
+      "x": 22.067,
+      "y": 20.034399999999998,
+      "z": 40.531
+    },
+    "ligand_id": "SO4",
+    "n_atoms": 5,
+    "smiles": "[O-]S(=O)(=O)[O-]"
+  },
+  {
+    "pdb_id": "1cot",
+    "experimental_affinity": -8.1,
+    "center": {
+      "x": 9.161511627906977,
+      "y": 13.401651162790698,
+      "z": 33.26348837209303
+    },
+    "ligand_id": "HEC",
+    "n_atoms": 43,
+    "smiles": "CC=C1C(=C2C=C3C(=CC)C(=C4N3[Fe]56N2C1=Cc7n5c(c(c7C)CCC(=O)O)C=C8N6C(=C4)C(=C8CCC(=O)O)C)C)C"
+  },
+  {
+    "pdb_id": "1cov",
+    "experimental_affinity": -9.3,
+    "center": {
+      "x": -132.96194444444444,
+      "y": 87.2773888888889,
+      "z": 148.90455555555553
+    },
+    "ligand_id": "PLM",
+    "n_atoms": 18,
+    "smiles": "CCCCCCCCCCCCCCCC(=O)O"
+  },
+  {
+    "pdb_id": "1coy",
+    "experimental_affinity": -7.9,
+    "center": {
+      "x": -16.32998113207547,
+      "y": 10.530113207547172,
+      "z": 19.247849056603776
+    },
+    "ligand_id": "FAD",
+    "n_atoms": 53,
+    "smiles": "Cc1cc2c(cc1C)N(C3=NC(=O)NC(=O)C3=N2)CC(C(C(COP(=O)(O)OP(=O)(O)OCC4C(C(C(O4)n5cnc6c5ncnc6N)O)O)O)O)O"
+  },
+  {
+    "pdb_id": "1coz",
+    "experimental_affinity": -8.3,
+    "center": {
+      "x": 18.263896551724137,
+      "y": 25.32975862068966,
+      "z": -15.509586206896552
+    },
+    "ligand_id": "CTP",
+    "n_atoms": 29,
+    "smiles": "C1=CN(C(=O)N=C1N)C2C(C(C(O2)COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O)O"
+  },
+  {
+    "pdb_id": "1cpe",
+    "experimental_affinity": -7.8,
+    "center": {
+      "x": -5.333744186046512,
+      "y": 56.184558139534886,
+      "z": 21.36432558139535
+    },
+    "ligand_id": "HEM",
+    "n_atoms": 43,
+    "smiles": "Cc1c2n3c(c1CCC(=O)O)C=C4C(=C(C5=[N]4[Fe]36[N]7=C(C=C8N6C(=C5)C(=C8C)C=C)C(=C(C7=C2)C)C=C)C)CCC(=O)O"
+  },
+  {
+    "pdb_id": "1cpf",
+    "experimental_affinity": -8.6,
+    "center": {
+      "x": -5.4413488372093015,
+      "y": 55.91272093023255,
+      "z": 21.259651162790696
+    },
+    "ligand_id": "HEM",
+    "n_atoms": 43,
+    "smiles": "Cc1c2n3c(c1CCC(=O)O)C=C4C(=C(C5=[N]4[Fe]36[N]7=C(C=C8N6C(=C5)C(=C8C)C=C)C(=C(C7=C2)C)C=C)C)CCC(=O)O"
+  },
+  {
+    "pdb_id": "1cpg",
+    "experimental_affinity": -8.2,
+    "center": {
+      "x": -5.31113953488372,
+      "y": 56.14386046511628,
+      "z": 21.387
+    },
+    "ligand_id": "HEM",
+    "n_atoms": 43,
+    "smiles": "Cc1c2n3c(c1CCC(=O)O)C=C4C(=C(C5=[N]4[Fe]36[N]7=C(C=C8N6C(=C5)C(=C8C)C=C)C(=C(C7=C2)C)C=C)C)CCC(=O)O"
+  },
+  {
+    "pdb_id": "1cpi",
+    "experimental_affinity": -9.7,
+    "center": {
+      "x": 6.206611111111112,
+      "y": 1.7432777777777775,
+      "z": 12.23711111111111
+    },
+    "ligand_id": "RTY",
+    "n_atoms": 18,
+    "smiles": "c1cc(ccc1CC(C(CBr)O)N)OCCCC(=O)O"
+  },
+  {
+    "pdb_id": "1cpo",
+    "experimental_affinity": -8.4,
+    "center": {
+      "x": 36.92237209302326,
+      "y": -0.07283720930232555,
+      "z": 2.8411162790697677
+    },
+    "ligand_id": "HEM",
+    "n_atoms": 43,
+    "smiles": "Cc1c2n3c(c1CCC(=O)O)C=C4C(=C(C5=[N]4[Fe]36[N]7=C(C=C8N6C(=C5)C(=C8C)C=C)C(=C(C7=C2)C)C=C)C)CCC(=O)O"
+  },
+  {
+    "pdb_id": "1cpq",
+    "experimental_affinity": -8.6,
+    "center": {
+      "x": 25.168021276595738,
+      "y": 19.373425531914894,
+      "z": 22.564340425531917
+    },
+    "ligand_id": "HEM",
+    "n_atoms": 47,
+    "smiles": "Cc1c2n3c(c1CCC(=O)O)C=C4C(=C(C5=[N]4[Fe]36[N]7=C(C=C8N6C(=C5)C(=C8C)C=C)C(=C(C7=C2)C)C=C)C)CCC(=O)O"
+  },
+  {
+    "pdb_id": "1cpr",
+    "experimental_affinity": -9.5,
+    "center": {
+      "x": 26.651139534883722,
+      "y": 20.669023255813954,
+      "z": 19.15906976744186
+    },
+    "ligand_id": "HEM",
+    "n_atoms": 43,
+    "smiles": "Cc1c2n3c(c1CCC(=O)O)C=C4C(=C(C5=[N]4[Fe]36[N]7=C(C=C8N6C(=C5)C(=C8C)C=C)C(=C(C7=C2)C)C=C)C)CCC(=O)O"
+  },
+  {
+    "pdb_id": "1cps",
+    "experimental_affinity": -8.3,
+    "center": {
+      "x": -2.2064375,
+      "y": 29.871562500000003,
+      "z": -8.5626875
+    },
+    "ligand_id": "CPM",
+    "n_atoms": 16,
+    "smiles": "CS(=N)(=N)CC(Cc1ccccc1)C(=O)O"
+  },
+  {
+    "pdb_id": "1cpt",
+    "experimental_affinity": -7.8,
+    "center": {
+      "x": 35.81904651162791,
+      "y": 13.104418604651165,
+      "z": 86.32730232558141
+    },
+    "ligand_id": "HEM",
+    "n_atoms": 43,
+    "smiles": "Cc1c2n3c(c1CCC(=O)O)C=C4C(=C(C5=[N]4[Fe]36[N]7=C(C=C8N6C(=C5)C(=C8C)C=C)C(=C(C7=C2)C)C=C)C)CCC(=O)O"
+  },
+  {
+    "pdb_id": "1cpu",
+    "experimental_affinity": -8.9,
+    "center": {
+      "x": 6.939071428571427,
+      "y": 67.33,
+      "z": 57.27985714285713
+    },
+    "ligand_id": "NAG",
+    "n_atoms": 14,
+    "smiles": "CC(=O)NC1C(C(C(OC1O)CO)O)O"
+  },
+  {
+    "pdb_id": "1cpw",
+    "experimental_affinity": -8.2,
+    "center": {
+      "x": 36.03325581395349,
+      "y": 3.7136976744186043,
+      "z": 10.667093023255815
+    },
+    "ligand_id": "HEM",
+    "n_atoms": 43,
+    "smiles": "Cc1c2n3c(c1CCC(=O)O)C=C4C(=C(C5=[N]4[Fe]36[N]7=C(C=C8N6C(=C5)C(=C8C)C=C)C(=C(C7=C2)C)C=C)C)CCC(=O)O"
+  },
+  {
+    "pdb_id": "1cqb",
+    "experimental_affinity": -8.5,
+    "center": {
+      "x": 1.9941972789115645,
+      "y": -3.218860544217687,
+      "z": 3.175108843537415
+    },
+    "ligand_id": "DXB",
+    "n_atoms": 294,
+    "smiles": "Cc1ccc2cc3c(c(c2c1O)O)C(=O)CC(C3)C(C(=O)C(C(C)O)O)OC"
+  },
+  {
+    "pdb_id": "1cqd",
+    "experimental_affinity": -8.8,
+    "center": {
+      "x": 17.580000000000002,
+      "y": 18.1555,
+      "z": 51.88378571428571
+    },
+    "ligand_id": "NAG",
+    "n_atoms": 14,
+    "smiles": "CC(=O)NC1C(C(C(OC1O)CO)O)O"
+  },
+  {
+    "pdb_id": "1cqe",
+    "experimental_affinity": -8.4,
+    "center": {
+      "x": 22.0933488372093,
+      "y": 45.84690697674419,
+      "z": 193.53295348837207
+    },
+    "ligand_id": "HEM",
+    "n_atoms": 43,
+    "smiles": "Cc1c2n3c(c1CCC(=O)O)C=C4C(=C(C5=[N]4[Fe]36[N]7=C(C=C8N6C(=C5)C(=C8C)C=C)C(=C(C7=C2)C)C=C)C)CCC(=O)O"
+  },
+  {
+    "pdb_id": "1cqf",
+    "experimental_affinity": -7.8,
+    "center": {
+      "x": -9.366833333333332,
+      "y": 9.360083333333334,
+      "z": 20.75283333333333
+    },
+    "ligand_id": "BGC",
+    "n_atoms": 12,
+    "smiles": "C(C1C(C(C(C(O1)O)O)O)O)O"
+  },
+  {
+    "pdb_id": "1cqi",
+    "experimental_affinity": -8.4,
+    "center": {
+      "x": 27.035416666666666,
+      "y": 63.987249999999996,
+      "z": 57.1775625
+    },
+    "ligand_id": "COA",
+    "n_atoms": 48,
+    "smiles": "CC(C)(COP(=O)(O)OP(=O)(O)OCC1C(C(C(O1)n2cnc3c2ncnc3N)O)OP(=O)(O)O)C(C(=O)NCCC(=O)NCCS)O"
+  },
+  {
+    "pdb_id": "1cqj",
+    "experimental_affinity": -8.1,
+    "center": {
+      "x": 27.343520833333333,
+      "y": 63.637541666666664,
+      "z": 57.211687500000004
+    },
+    "ligand_id": "COA",
+    "n_atoms": 48,
+    "smiles": "CC(C)(COP(=O)(O)OP(=O)(O)OCC1C(C(C(O1)n2cnc3c2ncnc3N)O)OP(=O)(O)O)C(C(=O)NCCC(=O)NCCS)O"
+  },
+  {
+    "pdb_id": "1cqp",
+    "experimental_affinity": -8.6,
+    "center": {
+      "x": 52.325758620689655,
+      "y": 21.107068965517247,
+      "z": 22.923172413793104
+    },
+    "ligand_id": "803",
+    "n_atoms": 29,
+    "smiles": "CCC(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC3CC(CC(=O)O3)O)C"
+  },
+  {
+    "pdb_id": "1cqq",
+    "experimental_affinity": -8.4,
+    "center": {
+      "x": 6.1899518072289155,
+      "y": -7.463915662650602,
+      "z": 29.24381927710843
+    },
+    "ligand_id": "AG7",
+    "n_atoms": 83,
+    "smiles": "CCOC(=O)CCC(CC1CCNC1=O)NC(=O)C(Cc2ccc(cc2)F)CC(=O)C(C(C)C)NC(=O)c3cc(on3)C"
+  },
+  {
+    "pdb_id": "1cqs",
+    "experimental_affinity": -8.7,
+    "center": {
+      "x": 25.48845,
+      "y": -30.0029,
+      "z": -38.18685
+    },
+    "ligand_id": "EQU",
+    "n_atoms": 20,
+    "smiles": "CC12CCc3c4ccc(cc4ccc3C1CCC2=O)O"
+  },
+  {
+    "pdb_id": "1cqx",
+    "experimental_affinity": -8.1,
+    "center": {
+      "x": 45.22345283018867,
+      "y": 30.9778679245283,
+      "z": 52.55683018867924
+    },
+    "ligand_id": "FAD",
+    "n_atoms": 53,
+    "smiles": "Cc1cc2c(cc1C)N(C3=NC(=O)NC(=O)C3=N2)CC(C(C(COP(=O)(O)OP(=O)(O)OCC4C(C(C(O4)n5cnc6c5ncnc6N)O)O)O)O)O"
+  },
+  {
+    "pdb_id": "1cra",
+    "experimental_affinity": -9.1,
+    "center": {
+      "x": -5.0052,
+      "y": 0.7618,
+      "z": 16.5058
+    },
+    "ligand_id": "TRI",
+    "n_atoms": 5,
+    "smiles": "c1[nH]cnn1"
+  },
+  {
+    "pdb_id": "1crb",
+    "experimental_affinity": -8.6,
+    "center": {
+      "x": 16.71557142857143,
+      "y": 4.416476190476191,
+      "z": -1.5423333333333336
+    },
+    "ligand_id": "RTL",
+    "n_atoms": 21,
+    "smiles": "CC1=C(C(CCC1)(C)C)C=CC(=CC=CC(=CCO)C)C"
+  },
+  {
+    "pdb_id": "1crc",
+    "experimental_affinity": -8.2,
+    "center": {
+      "x": 7.827860465116278,
+      "y": 24.06239534883721,
+      "z": 13.746837209302326
+    },
+    "ligand_id": "HEC",
+    "n_atoms": 43,
+    "smiles": "CC=C1C(=C2C=C3C(=CC)C(=C4N3[Fe]56N2C1=Cc7n5c(c(c7C)CCC(=O)O)C=C8N6C(=C4)C(=C8CCC(=O)O)C)C)C"
+  },
+  {
+    "pdb_id": "1crg",
+    "experimental_affinity": -8.0,
+    "center": {
+      "x": 3.6219302325581393,
+      "y": 20.312255813953488,
+      "z": 13.44760465116279
+    },
+    "ligand_id": "HEC",
+    "n_atoms": 43,
+    "smiles": "CC=C1C(=C2C=C3C(=CC)C(=C4N3[Fe]56N2C1=Cc7n5c(c(c7C)CCC(=O)O)C=C8N6C(=C4)C(=C8CCC(=O)O)C)C)C"
+  },
+  {
+    "pdb_id": "1crh",
+    "experimental_affinity": -8.7,
+    "center": {
+      "x": 3.4740697674418604,
+      "y": 20.2266511627907,
+      "z": 13.475883720930234
+    },
+    "ligand_id": "HEC",
+    "n_atoms": 43,
+    "smiles": "CC=C1C(=C2C=C3C(=CC)C(=C4N3[Fe]56N2C1=Cc7n5c(c(c7C)CCC(=O)O)C=C8N6C(=C4)C(=C8CCC(=O)O)C)C)C"
+  },
+  {
+    "pdb_id": "1cri",
+    "experimental_affinity": -8.4,
+    "center": {
+      "x": 3.2945581395348835,
+      "y": 20.288465116279074,
+      "z": 13.65353488372093
+    },
+    "ligand_id": "HEM",
+    "n_atoms": 43,
+    "smiles": "Cc1c2n3c(c1CCC(=O)O)C=C4C(=C(C5=[N]4[Fe]36[N]7=C(C=C8N6C(=C5)C(=C8C)C=C)C(=C(C7=C2)C)C=C)C)CCC(=O)O"
+  },
+  {
+    "pdb_id": "1crj",
+    "experimental_affinity": -8.1,
+    "center": {
+      "x": 3.5545116279069764,
+      "y": 20.365395348837207,
+      "z": 13.560534883720932
+    },
+    "ligand_id": "HEC",
+    "n_atoms": 43,
+    "smiles": "CC=C1C(=C2C=C3C(=CC)C(=C4N3[Fe]56N2C1=Cc7n5c(c(c7C)CCC(=O)O)C=C8N6C(=C4)C(=C8CCC(=O)O)C)C)C"
+  },
+  {
+    "pdb_id": "1crl",
+    "experimental_affinity": -7.9,
+    "center": {
+      "x": 53.839285714285715,
+      "y": 67.28792857142857,
+      "z": -2.3783571428571433
+    },
+    "ligand_id": "NAG",
+    "n_atoms": 14,
+    "smiles": "CC(=O)NC1C(C(C(OC1O)CO)O)O"
+  },
+  {
+    "pdb_id": "1crp",
+    "experimental_affinity": -8.1,
+    "center": {
+      "x": 60.192328749999994,
+      "y": 76.276275,
+      "z": 53.58923874999999
+    },
+    "ligand_id": "GDP",
+    "n_atoms": 800,
+    "smiles": "c1nc2c(n1C3C(C(C(O3)COP(=O)(O)OP(=O)(O)O)O)O)N=C(NC2=O)N"
+  },
+  {
+    "pdb_id": "1crq",
+    "experimental_affinity": -8.7,
+    "center": {
+      "x": 60.316700000000004,
+      "y": 76.427075,
+      "z": 53.8359
+    },
+    "ligand_id": "GDP",
+    "n_atoms": 40,
+    "smiles": "c1nc2c(n1C3C(C(C(O3)COP(=O)(O)OP(=O)(O)O)O)O)N=C(NC2=O)N"
+  },
+  {
+    "pdb_id": "1crr",
+    "experimental_affinity": -8.3,
+    "center": {
+      "x": 60.17375875,
+      "y": 76.21004625,
+      "z": 53.814347500000004
+    },
+    "ligand_id": "GDP",
+    "n_atoms": 800,
+    "smiles": "c1nc2c(n1C3C(C(C(O3)COP(=O)(O)OP(=O)(O)O)O)O)N=C(NC2=O)N"
+  },
+  {
+    "pdb_id": "1cru",
+    "experimental_affinity": -8.2,
+    "center": {
+      "x": 17.123166666666666,
+      "y": 52.399541666666664,
+      "z": 68.50191666666666
+    },
+    "ligand_id": "PQQ",
+    "n_atoms": 24,
+    "smiles": "c1c2c([nH]c1C(=O)O)-c3c(cc(nc3C(=O)C2=O)C(=O)O)C(=O)O"
+  },
+  {
+    "pdb_id": "1crx",
+    "experimental_affinity": -7.9,
+    "center": {
+      "x": 75.30373333333333,
+      "y": 42.61006666666666,
+      "z": 86.34006666666667
+    },
+    "ligand_id": "PTR",
+    "n_atoms": 15,
+    "smiles": "c1cc(ccc1CC(C(=O)O)N)OP(=O)(O)O"
+  },
+  {
+    "pdb_id": "1cry",
+    "experimental_affinity": -8.6,
+    "center": {
+      "x": 21.558976744186044,
+      "y": -19.865651162790698,
+      "z": 13.923976744186044
+    },
+    "ligand_id": "HEC",
+    "n_atoms": 43,
+    "smiles": "CC=C1C(=C2C=C3C(=CC)C(=C4N3[Fe]56N2C1=Cc7n5c(c(c7C)CCC(=O)O)C=C8N6C(=C4)C(=C8CCC(=O)O)C)C)C"
+  },
+  {
+    "pdb_id": "1crz",
+    "experimental_affinity": -8.1,
+    "center": {
+      "x": 8.696625000000001,
+      "y": 24.3315,
+      "z": 26.473750000000003
+    },
+    "ligand_id": "MSE",
+    "n_atoms": 8,
+    "smiles": "C[Se]CCC(C(=O)O)N"
+  },
+  {
+    "pdb_id": "1csa",
+    "experimental_affinity": -8.5,
+    "center": {
+      "x": -0.4636092592592593,
+      "y": 3.107387037037037,
+      "z": 2.8046648148148154
+    },
+    "ligand_id": "BMT",
+    "n_atoms": 540,
+    "smiles": "CC=CCC(C)C(C(C(=O)O)NC)O"
+  },
+  {
+    "pdb_id": "1csb",
+    "experimental_affinity": -8.3,
+    "center": {
+      "x": 21.865038461538465,
+      "y": -5.580576923076923,
+      "z": 36.87526923076923
+    },
+    "ligand_id": "EP0",
+    "n_atoms": 26,
+    "smiles": "CCC(C)C(C(=O)N1CCCC1C(=O)O)NC(=O)CC(C(=O)OCC)O"
+  },
+  {
+    "pdb_id": "1csc",
+    "experimental_affinity": -8.7,
+    "center": {
+      "x": 15.680903846153845,
+      "y": -9.695769230769232,
+      "z": 9.905000000000003
+    },
+    "ligand_id": "CMC",
+    "n_atoms": 52,
+    "smiles": "CC(C)(COP(=O)(O)OP(=O)(O)OCC1C(C(C(O1)n2cnc3c2ncnc3N)O)OP(=O)(O)O)C(C(=O)NCCC(=O)NCCSCC(=O)O)O"
+  },
+  {
+    "pdb_id": "1csh",
+    "experimental_affinity": -8.6,
+    "center": {
+      "x": 15.686196078431374,
+      "y": -9.869843137254902,
+      "z": 10.05156862745098
+    },
+    "ligand_id": "AMX",
+    "n_atoms": 51,
+    "smiles": "CC(C)(COP(=O)(O)OP(=O)(O)OCC1C(C(C(O1)n2cnc3c2ncnc3N)O)OP(=O)(O)O)C(C(=O)NCCC(=O)NCCCC(=O)N)O"
+  },
+  {
+    "pdb_id": "1csi",
+    "experimental_affinity": -7.9,
+    "center": {
+      "x": 15.670117647058824,
+      "y": -9.912392156862746,
+      "z": 10.084725490196078
+    },
+    "ligand_id": "CMX",
+    "n_atoms": 51,
+    "smiles": "CC(C)(COP(=O)(O)OP(=O)(O)OCC1C(C(C(O1)n2cnc3c2ncnc3N)O)OP(=O)(O)O)C(C(=O)NCCC(=O)NCCCC(=O)O)O"
+  },
+  {
+    "pdb_id": "1csj",
+    "experimental_affinity": -8.5,
+    "center": {
+      "x": 21.69025,
+      "y": -27.16825,
+      "z": 110.35475
+    },
+    "ligand_id": "MSE",
+    "n_atoms": 8,
+    "smiles": "C[Se]CCC(C(=O)O)N"
+  },
+  {
+    "pdb_id": "1csm",
+    "experimental_affinity": -8.2,
+    "center": {
+      "x": 3.183368421052632,
+      "y": 46.530210526315784,
+      "z": 18.452105263157893
+    },
+    "ligand_id": "TRP",
+    "n_atoms": 19,
+    "smiles": "c1ccc2c(c1)c(c[nH]2)CC(C(=O)O)N"
+  },
+  {
+    "pdb_id": "1csn",
+    "experimental_affinity": -8.4,
+    "center": {
+      "x": -23.548354838709674,
+      "y": 48.58919354838709,
+      "z": 51.66106451612903
+    },
+    "ligand_id": "ATP",
+    "n_atoms": 31,
+    "smiles": "c1nc(c2c(n1)n(cn2)C3C(C(C(O3)COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O)O)N"
+  },
+  {
+    "pdb_id": "1csr",
+    "experimental_affinity": -8.5,
+    "center": {
+      "x": 15.703038461538458,
+      "y": -9.76332692307692,
+      "z": 9.9095
+    },
+    "ligand_id": "FAM",
+    "n_atoms": 52,
+    "smiles": "CC(C)(COP(=O)(O)OP(=O)(O)OCC1C(C(C(O1)n2cnc3c2ncnc3N)O)OP(=O)(O)O)C(C(=O)NCCC(=O)NCCC(C(=O)N)F)O"
+  },
+  {
+    "pdb_id": "1css",
+    "experimental_affinity": -8.8,
+    "center": {
+      "x": 15.732551724137933,
+      "y": -9.306034482758621,
+      "z": 9.145999999999999
+    },
+    "ligand_id": "FCX",
+    "n_atoms": 58,
+    "smiles": "CC(C)(COP(=O)(O)OP(=O)(O)OCC1C(C(C(O1)n2cnc3c2ncnc3N)O)OP(=O)(O)O)C(C(=O)NCCC(=O)NCCC(C(=O)O)F)O"
+  },
+  {
+    "pdb_id": "1csu",
+    "experimental_affinity": -8.4,
+    "center": {
+      "x": 3.458813953488372,
+      "y": 20.27248837209302,
+      "z": 13.521186046511628
+    },
+    "ligand_id": "HEC",
+    "n_atoms": 43,
+    "smiles": "CC=C1C(=C2C=C3C(=CC)C(=C4N3[Fe]56N2C1=Cc7n5c(c(c7C)CCC(=O)O)C=C8N6C(=C4)C(=C8CCC(=O)O)C)C)C"
+  },
+  {
+    "pdb_id": "1csv",
+    "experimental_affinity": -8.1,
+    "center": {
+      "x": 3.233651162790697,
+      "y": 20.242069767441862,
+      "z": 13.682558139534882
+    },
+    "ligand_id": "HEC",
+    "n_atoms": 43,
+    "smiles": "CC=C1C(=C2C=C3C(=CC)C(=C4N3[Fe]56N2C1=Cc7n5c(c(c7C)CCC(=O)O)C=C8N6C(=C4)C(=C8CCC(=O)O)C)C)C"
+  },
+  {
+    "pdb_id": "1csw",
+    "experimental_affinity": -8.7,
+    "center": {
+      "x": 3.4651860465116275,
+      "y": 20.206279069767444,
+      "z": 13.575069767441862
+    },
+    "ligand_id": "HEC",
+    "n_atoms": 43,
+    "smiles": "CC=C1C(=C2C=C3C(=CC)C(=C4N3[Fe]56N2C1=Cc7n5c(c(c7C)CCC(=O)O)C=C8N6C(=C4)C(=C8CCC(=O)O)C)C)C"
+  },
+  {
+    "pdb_id": "1csx",
+    "experimental_affinity": -8.3,
+    "center": {
+      "x": 3.444581395348837,
+      "y": 20.265790697674415,
+      "z": 13.518325581395349
+    },
+    "ligand_id": "HEC",
+    "n_atoms": 43,
+    "smiles": "CC=C1C(=C2C=C3C(=CC)C(=C4N3[Fe]56N2C1=Cc7n5c(c(c7C)CCC(=O)O)C=C8N6C(=C4)C(=C8CCC(=O)O)C)C)C"
+  },
+  {
+    "pdb_id": "1csy",
+    "experimental_affinity": -8.6,
+    "center": {
+      "x": 3.0268812499999997,
+      "y": 8.13779375,
+      "z": 7.088952083333334
+    },
+    "ligand_id": "PTR",
+    "n_atoms": 480,
+    "smiles": "c1cc(ccc1CC(C(=O)O)N)OP(=O)(O)O"
+  },
+  {
+    "pdb_id": "1csz",
+    "experimental_affinity": -8.2,
+    "center": {
+      "x": 2.5119166666666666,
+      "y": 7.6634166666666665,
+      "z": 6.997833333333333
+    },
+    "ligand_id": "PTR",
+    "n_atoms": 24,
+    "smiles": "c1cc(ccc1CC(C(=O)O)N)OP(=O)(O)O"
+  },
+  {
+    "pdb_id": "1ctd",
+    "experimental_affinity": -8.2,
+    "center": {
+      "x": 2.169904761904762,
+      "y": -3.621666666666666,
+      "z": 13.576476190476187
+    },
+    "ligand_id": "NH2",
+    "n_atoms": 21,
+    "smiles": "[NH2]"
+  },
+  {
+    "pdb_id": "1cte",
+    "experimental_affinity": -8.4,
+    "center": {
+      "x": 13.684142857142858,
+      "y": 56.39714285714285,
+      "z": 41.18228571428572
+    },
+    "ligand_id": "PYS",
+    "n_atoms": 7,
+    "smiles": "c1ccnc(c1)S"
+  },
+  {
+    "pdb_id": "1ctf",
+    "experimental_affinity": -8.1,
+    "center": {
+      "x": 11.517800000000001,
+      "y": -6.3636,
+      "z": -6.251600000000001
+    },
+    "ligand_id": "SO4",
+    "n_atoms": 5,
+    "smiles": "[O-]S(=O)(=O)[O-]"
+  },
+  {
+    "pdb_id": "1cth",
+    "experimental_affinity": -8.5,
+    "center": {
+      "x": 34.46574418604652,
+      "y": -9.338093023255812,
+      "z": -0.9882093023255812
+    },
+    "ligand_id": "HEM",
+    "n_atoms": 43,
+    "smiles": "Cc1c2n3c(c1CCC(=O)O)C=C4C(=C(C5=[N]4[Fe]36[N]7=C(C=C8N6C(=C5)C(=C8C)C=C)C(=C(C7=C2)C)C=C)C)CCC(=O)O"
+  },
+  {
+    "pdb_id": "1ctj",
+    "experimental_affinity": -8.6,
+    "center": {
+      "x": 13.506209302325583,
+      "y": 47.20116279069767,
+      "z": -15.87813953488372
+    },
+    "ligand_id": "HEM",
+    "n_atoms": 43,
+    "smiles": "Cc1c2n3c(c1CCC(=O)O)C=C4C(=C(C5=[N]4[Fe]36[N]7=C(C=C8N6C(=C5)C(=C8C)C=C)C(=C(C7=C2)C)C=C)C)CCC(=O)O"
+  },
+  {
+    "pdb_id": "1ctm",
+    "experimental_affinity": -8.1,
+    "center": {
+      "x": 89.09262790697674,
+      "y": 82.47918604651161,
+      "z": -6.9353255813953485
+    },
+    "ligand_id": "HEC",
+    "n_atoms": 43,
+    "smiles": "CC=C1C(=C2C=C3C(=CC)C(=C4N3[Fe]56N2C1=Cc7n5c(c(c7C)CCC(=O)O)C=C8N6C(=C4)C(=C8CCC(=O)O)C)C)C"
+  },
+  {
+    "pdb_id": "1ctp",
+    "experimental_affinity": -8.5,
+    "center": {
+      "x": 28.58421428571429,
+      "y": 89.16878571428572,
+      "z": 143.51414285714287
+    },
+    "ligand_id": "TYI",
+    "n_atoms": 14,
+    "smiles": "c1c(cc(c(c1I)O)I)CC(C(=O)O)N"
+  },
+  {
+    "pdb_id": "1ctq",
+    "experimental_affinity": -8.2,
+    "center": {
+      "x": 11.64271875,
+      "y": 32.71121875,
+      "z": 19.324406250000003
+    },
+    "ligand_id": "GNP",
+    "n_atoms": 32,
+    "smiles": "c1nc2c(n1C3C(C(C(O3)COP(=O)(O)OP(=O)(NP(=O)(O)O)O)O)O)N=C(NC2=O)N"
+  },
+  {
+    "pdb_id": "1ctr",
+    "experimental_affinity": -8.8,
+    "center": {
+      "x": 3.7083214285714283,
+      "y": 26.665392857142855,
+      "z": 105.09267857142858
+    },
+    "ligand_id": "TFP",
+    "n_atoms": 28,
+    "smiles": "CN1CCN(CC1)CCCN2c3ccccc3Sc4c2cc(cc4)C(F)(F)F"
+  },
+  {
+    "pdb_id": "1cts",
+    "experimental_affinity": -8.4,
+    "center": {
+      "x": 58.06584615384615,
+      "y": 27.59007692307692,
+      "z": 35.564692307692304
+    },
+    "ligand_id": "CIT",
+    "n_atoms": 13,
+    "smiles": "C(C(=O)O)C(CC(=O)O)(C(=O)O)O"
+  },
+  {
+    "pdb_id": "1ctu",
+    "experimental_affinity": -8.1,
+    "center": {
+      "x": 35.3119411764706,
+      "y": 49.78058823529412,
+      "z": 9.09770588235294
+    },
+    "ligand_id": "ZEB",
+    "n_atoms": 17,
+    "smiles": "C1=CN(C(=O)NC1O)C2C(C(C(O2)CO)O)O"
+  },
+  {
+    "pdb_id": "1ctw",
+    "experimental_affinity": -8.3,
+    "center": {
+      "x": 33.441,
+      "y": -1.392,
+      "z": 12.099125
+    },
+    "ligand_id": "HED",
+    "n_atoms": 8,
+    "smiles": "C(CSSCCO)O"
+  },
+  {
+    "pdb_id": "1cty",
+    "experimental_affinity": -8.2,
+    "center": {
+      "x": 3.2696046511627905,
+      "y": 20.21313953488372,
+      "z": 13.612093023255815
+    },
+    "ligand_id": "HEC",
+    "n_atoms": 43,
+    "smiles": "CC=C1C(=C2C=C3C(=CC)C(=C4N3[Fe]56N2C1=Cc7n5c(c(c7C)CCC(=O)O)C=C8N6C(=C4)C(=C8CCC(=O)O)C)C)C"
+  },
+  {
+    "pdb_id": "1ctz",
+    "experimental_affinity": -8.7,
+    "center": {
+      "x": 3.643697674418604,
+      "y": 20.196,
+      "z": 13.500930232558137
+    },
+    "ligand_id": "HEC",
+    "n_atoms": 43,
+    "smiles": "CC=C1C(=C2C=C3C(=CC)C(=C4N3[Fe]56N2C1=Cc7n5c(c(c7C)CCC(=O)O)C=C8N6C(=C4)C(=C8CCC(=O)O)C)C)C"
+  },
+  {
+    "pdb_id": "1cul",
+    "experimental_affinity": -8.3,
+    "center": {
+      "x": 17.79328125,
+      "y": 4.9324375,
+      "z": 24.76853125
+    },
+    "ligand_id": "GSP",
+    "n_atoms": 32,
+    "smiles": "c1nc2c(n1C3C(C(C(O3)COP(=O)(O)OP(=O)(O)OP(=S)(O)O)O)O)N=C(NC2=O)N"
+  },
+  {
+    "pdb_id": "1cum",
+    "experimental_affinity": -8.7,
+    "center": {
+      "x": 0.6946129032258063,
+      "y": -2.257516129032258,
+      "z": 65.75796774193547
+    },
+    "ligand_id": "FMN",
+    "n_atoms": 31,
+    "smiles": "Cc1cc2c(cc1C)N(C3=NC(=O)NC(=O)C3=N2)CC(C(C(COP(=O)(O)O)O)O)O"
+  },
+  {
+    "pdb_id": "1cup",
+    "experimental_affinity": -9.2,
+    "center": {
+      "x": 33.249375,
+      "y": -1.537375,
+      "z": 12.589500000000001
+    },
+    "ligand_id": "HED",
+    "n_atoms": 8,
+    "smiles": "C(CSSCCO)O"
+  },
+  {
+    "pdb_id": "1cuq",
+    "experimental_affinity": -8.5,
+    "center": {
+      "x": 32.803124999999994,
+      "y": -1.693,
+      "z": 12.84675
+    },
+    "ligand_id": "HED",
+    "n_atoms": 8,
+    "smiles": "C(CSSCCO)O"
+  },
+  {
+    "pdb_id": "1cur",
+    "experimental_affinity": -8.8,
+    "center": {
+      "x": -4.704133333333333,
+      "y": -8.5114,
+      "z": -3.278866666666666
+    },
+    "ligand_id": "CU",
+    "n_atoms": 15,
+    "smiles": "[Cu+2]"
+  }
+]

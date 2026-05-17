@@ -1,0 +1,25 @@
+Loading cached features from /home/chow/.cache/geock_autoresearch/features_v2.pkl
+Selected: ['E4_bio_pocket_druggability', 'E4_bio_resolution_weight', 'E4_bio_pocket_polarity']
+train_pearson_r: 0.839385
+val_pearson_r: 0.681834
+val_mae: 0.559482
+loo_pearson_r: 0.643793
+test_pearson_r: 0.448511
+test_mae: 0.258048
+
+============================================================
+  GEOCK — PATH 1 RESULTS (E4 pocket features, n=10)
+============================================================
+  Model:       Lasso, k=3, alpha=0.015
+  Features:    ['E4_bio_pocket_druggability', 'E4_bio_resolution_weight', 'E4_bio_pocket_polarity']
+
+  Split        R       MAE    What it measures
+  ----         -       ---    ----------------
+  Training      0.839   --    Memorisation check (should be high)
+  LOO-CV       0.644   --    Honest generalisation (model selection)
+  Validation   0.682   0.559  Optimistic (overfits to val set)
+  Test         0.449   0.258  True external performance
+
+  Paper number: LOO-CV R = 0.644 (honest estimate)
+  True external: Test R = 0.449 (5 held-out compounds)
+============================================================
