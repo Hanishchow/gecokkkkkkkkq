@@ -1,48 +1,258 @@
-#!/bin/bash
-# GEOCK v2 Quick Commands
+#!/usr/bin/env python3
+"""
+GEOCK v2 - Binding Affinity Prediction CLI
 
-cd /home/chow/autoresearch
+Predict protein-ligand binding affinity from SMILES using ECFP4 + XGBoost.
 
-case "$1" in
-    "")
-        echo "=========================================="
-        echo "  GEOCK v2 - Binding Affinity Prediction"
-        echo "=========================================="
-        echo ""
-        echo "Commands:"
-        echo "  geock              - Show this help"
-        echo "  geock help         - Show quick reference"
-        echo "  geock predict SMILES - Predict binding affinity"
-        echo "  geock casf         - Run CASF validation"
-        echo "  geock train        - Train model"
-        echo "  geock docs          - Open documentation folder"
-        echo ""
-        echo "Examples:"
-        echo "  geock predict CCO"
-        echo "  geock predict 'CC(=O)Oc1ccccc1C(=O)O'"
-        ;;
-    "help")
-        cat /mnt/c/Users/yakka/Downloads/Geockk/GEOCK-QuickRef.md
-        ;;
-    "predict")
-        if [ -z "$2" ]; then
-            echo "Usage: geock predict SMILES"
-            echo "Example: geock predict CCO"
-        else
-            python geock_engine.py --smiles "$2"
-        fi
-        ;;
-    "casf")
-        python casf2007_validation.py
-        ;;
-    "train")
-        python train_final_model.py
-        ;;
-    "docs")
-        cd /mnt/c/Users/yakka/Downloads/Geockk
-        ls -la
-        ;;
-    *)
-        python3 cli.py "$@"
-        ;;
-esac
+Usage:
+    python geock --smiles "CCO"
+    python geock --smiles "CC(=O)Oc1ccccc1C(=O)O" --model best
+    python geock --batch smiles.txt
+    python geock --compare "CCO" "c1ccccc1" "CC(=O)Oc1ccccc1C(=O)O"
+    python geock --list-models
+    python geock --validate
+"""
+import os, sys, pickle, csv, json, argparse, warnings
+from pathlib import Path
+import numpy as np
+
+warnings.filterwarnings('ignore')
+
+try:
+    from rdkit import Chem
+    from rdkit.Chem import AllChem
+    HAVE_RDKIT = True
+except ImportError:
+    HAVE_RDKIT = False
+
+SCRIPT_DIR = Path(__file__).parent.resolve()
+MODELS = {
+    'best':     SCRIPT_DIR / 'geock_v2_xgboost_39k.pkl',
+    'retrain':  SCRIPT_DIR / 'geock_best_retrained.pkl',
+    'retrain23':SCRIPT_DIR / 'geock_best_retrained_23k.pkl',
+    'kuramoto': SCRIPT_DIR / 'geock_v2_kuramoto.pkl',
+    'final':    SCRIPT_DIR / 'geock_deep_trees_final.pkl',
+    'no2016':   SCRIPT_DIR / 'geock_deep_trees_no2016.pkl',
+}
+
+MODEL_INFO = {
+    'best':      'XGBoost depth=12, 500 trees, k=400, CV R=0.8467, CASF-07 R=0.8727',
+    'retrain':   'Retrained 39K: depth=12, 500 trees, k=400, CV R=0.8470, CASF-07 R=0.8762',
+    'retrain23': 'Retrained 23K: depth=12, 500 trees, k=400, CV R=0.7451, CASF-07 R=0.8684',
+    'kuramoto':  'ECFP+4 Kuramoto physics feats, depth=12, k=400, CV R=0.8481, CASF-07 R=0.8686',
+    'final':     'Deep Trees depth=10, 200 trees, k=500, CV R=0.8432, CASF-07 R=0.8341',
+    'no2016':    'Deep Trees depth=10, 200 trees, k=500, CV R=0.8437, CASF-07 R=0.7796',
+}
+
+def _load_model(name='best'):
+    path = MODELS.get(name)
+    if not path or not path.exists():
+        avail = [k for k, v in MODELS.items() if v.exists()]
+        raise FileNotFoundError(f'Model {name!r} not found. Available: {avail}')
+    with open(path, 'rb') as f:
+        return pickle.load(f)
+
+def _ecfp(smiles):
+    mol = Chem.MolFromSmiles(smiles)
+    if mol is None:
+        raise ValueError(f'Invalid SMILES: {smiles}')
+    fp = AllChem.GetMorganFingerprintAsBitVect(mol, 2, nBits=512)
+    return np.array(fp, dtype=np.float32).reshape(1, -1)
+
+def _ecfp_flat(smiles):
+    mol = Chem.MolFromSmiles(smiles)
+    if mol is None:
+        raise ValueError(f'Invalid SMILES: {smiles}')
+    fp = AllChem.GetMorganFingerprintAsBitVect(mol, 2, nBits=512)
+    return np.array(fp, dtype=np.float32)
+
+def _kuramoto_features(ecfp):
+    bits = ecfp
+    n = len(bits)
+    phases = bits * np.pi
+    r = abs(np.mean(np.exp(1j * phases)))
+    coupling = np.sum(bits) / n
+    majority = 1 if np.sum(bits) > n / 2 else 0
+    locked = np.sum(bits == majority) / n
+    p0 = np.sum(bits == 0) / n
+    p1 = 1 - p0
+    entropy = -p0 * np.log(p0) - p1 * np.log(p1) if p0 > 0 and p1 > 0 else 0
+    speed = 1.0 / (1.0 + entropy)
+    return np.array([r, coupling, locked, speed], dtype=np.float32)
+
+def predict(smiles, model_name='best', model_data=None):
+    if not HAVE_RDKIT:
+        return {'error': 'RDKit not installed. pip install rdkit'}
+    if model_data is None:
+        model_data = _load_model(model_name)
+    try:
+        ecfp_flat = _ecfp_flat(smiles)
+    except ValueError as e:
+        return {'error': str(e)}
+
+    md = model_data
+    n_expected = md['scaler'].n_features_in_ if 'scaler' in md else 512
+
+    if n_expected == 516:
+        kuramoto = _kuramoto_features(ecfp_flat)
+        X = np.hstack([ecfp_flat, kuramoto]).reshape(1, -1)
+    else:
+        X = ecfp_flat.reshape(1, -1)
+
+    if 'scaler' in md and 'selector' in md:
+        X = md['scaler'].transform(X)
+        if md['selector'].k is not None and md['selector'].k <= X.shape[1]:
+            X = md['selector'].transform(X)
+    elif 'sel' in md:
+        X = md['sel'].transform(X)
+
+    if 'model' in md:
+        pKd = float(md['model'].predict(X)[0])
+    elif 'xgb' in md:
+        pKd = float(md['xgb'].predict(X)[0])
+    else:
+        return {'error': 'Unknown model format'}
+
+    cv_r = float(md.get('cv_r', md.get('cv_r2', 0)))
+    result = {'pKd': pKd, 'Kd_nM': 10**(-pKd) * 1e9, 'model_cv_r': cv_r}
+    if pKd < 3: result['strength'] = 'non-binder'
+    elif pKd < 5: result['strength'] = 'weak'
+    elif pKd < 7: result['strength'] = 'moderate'
+    elif pKd < 9: result['strength'] = 'strong'
+    else: result['strength'] = 'very strong'
+    return result
+
+def format_affinity(pKd, Kd_nM):
+    if Kd_nM >= 1e6:
+        kd_s = f'{Kd_nM/1e6:.2f} mM'
+    elif Kd_nM >= 1000:
+        kd_s = f'{Kd_nM/1000:.2f} uM'
+    elif Kd_nM >= 1:
+        kd_s = f'{Kd_nM:.2f} nM'
+    else:
+        kd_s = f'{Kd_nM*1000:.2f} pM'
+    return kd_s
+
+def main():
+    parser = argparse.ArgumentParser(
+        description='GEOCK v2 - Binding Affinity Prediction CLI',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=f'''Examples:
+  python {sys.argv[0]} --smiles "CCO"
+  python {sys.argv[0]} --smiles "CC(=O)Oc1ccccc1C(=O)O" --model best
+  python {sys.argv[0]} --batch smiles.txt --model all
+  python {sys.argv[0]} --compare "CCO" "c1ccccc1" "CC(=O)Oc1ccccc1C(=O)O"
+''')
+    parser.add_argument('--smiles', help='SMILES string to predict')
+    parser.add_argument('--model', default='best', help='Model to use (best, final, no2016, all)')
+    parser.add_argument('--batch', help='File with SMILES strings (one per line)')
+    parser.add_argument('--compare', nargs='+', help='Compare predictions for multiple SMILES')
+    parser.add_argument('--list-models', action='store_true', help='List available models')
+    parser.add_argument('--validate', action='store_true', help='Validate model on CASF-2007 (if CSV available)')
+    parser.add_argument('--json', action='store_true', help='Output as JSON')
+    parser.add_argument('--no-rdkit', action='store_true', help='Skip RDKit check')
+
+    args = parser.parse_args()
+
+    if not HAVE_RDKIT and not args.list_models:
+        print('ERROR: RDKit required. Install with: pip install rdkit')
+        sys.exit(1)
+
+    if args.list_models:
+        print(f'Available models ({SCRIPT_DIR}):')
+        for name in ['best', 'retrain', 'retrain23', 'kuramoto', 'final', 'no2016']:
+            path = MODELS[name]
+            status = 'EXISTS' if path.exists() else 'NOT FOUND'
+            print(f'  {name:10s} {MODEL_INFO[name]}')
+            print(f'             {path.name} [{status}]')
+        return
+
+    if args.validate:
+        casf_csv = SCRIPT_DIR.parent / 'CASF_Results' / 'casf2007_predictions.csv'
+        if not casf_csv.exists():
+            print(f'CASF CSV not found at {casf_csv}')
+            return
+        models_to_test = list(MODELS.keys()) if args.model == 'all' else [args.model]
+        from scipy.stats import pearsonr, spearmanr
+        with open(casf_csv) as f:
+            rows = list(csv.DictReader(f))
+        smis = [r['smiles'] for r in rows]
+        trues = np.array([float(r['pkd_true']) for r in rows])
+        print(f'Validating on {len(rows)} CASF-2007 complexes...')
+        for mname in models_to_test:
+            md = _load_model(mname)
+            preds = []
+            for s in smis:
+                r = predict(s, mname, md)
+                preds.append(r.get('pKd', 0))
+            preds = np.array(preds)
+            r, _ = pearsonr(trues, preds)
+            rho, _ = spearmanr(trues, preds)
+            mae = np.mean(np.abs(trues - preds))
+            rmse = np.sqrt(np.mean((trues - preds)**2))
+            print(f'  {mname:10s} R={r:.4f} Sp={rho:.4f} MAE={mae:.2f} RMSE={rmse:.2f}')
+        return
+
+    if args.compare:
+        if args.model == 'all':
+            all_models = list(MODELS.keys())
+        else:
+            all_models = [args.model]
+        print(f'{"SMILES":40s}', end='')
+        for mname in all_models:
+            print(f'  {mname:>8s}', end='')
+        print()
+        print('-' * (40 + 12 * len(all_models)))
+        for s in args.compare:
+            print(f'{s:40s}', end='')
+            for mname in all_models:
+                r = predict(s, mname)
+                if 'error' in r:
+                    print(f'  {"ERROR":>8s}', end='')
+                else:
+                    print(f'  {r["pKd"]:>8.2f}', end='')
+            print()
+        return
+
+    if args.batch:
+        with open(args.batch) as f:
+            smiles_list = [line.strip() for line in f if line.strip()]
+        models_to_run = list(MODELS.keys()) if args.model == 'all' else [args.model]
+        print(f'Predicting {len(smiles_list)} molecules with {len(models_to_run)} model(s)...')
+        for s in smiles_list:
+            for mname in models_to_run:
+                r = predict(s, mname)
+                if 'error' in r:
+                    print(f'  {s:40s} [{mname}] ERROR: {r["error"]}')
+                else:
+                    kd_s = format_affinity(r['pKd'], r['Kd_nM'])
+                    print(f'  {s:40s} [{mname}] pKd={r["pKd"]:.2f}  Kd={kd_s}  ({r["strength"]})')
+        return
+
+    if args.smiles:
+        models_to_run = list(MODELS.keys()) if args.model == 'all' else [args.model]
+        results = {}
+        for mname in models_to_run:
+            r = predict(args.smiles, mname)
+            results[mname] = r
+
+        if args.json:
+            import json as _json
+            print(_json.dumps(results, indent=2, default=str))
+            return
+
+        print(f'SMILES: {args.smiles}')
+        print()
+        for mname in models_to_run:
+            r = results[mname]
+            if 'error' in r:
+                print(f'  [{mname}] ERROR: {r["error"]}')
+            else:
+                kd_s = format_affinity(r['pKd'], r['Kd_nM'])
+                print(f'  [{mname}] pKd={r["pKd"]:.2f}  Kd={kd_s}  ({r["strength"]})  CV R={r["model_cv_r"]:.4f}')
+        return
+
+    parser.print_help()
+
+if __name__ == '__main__':
+    main()

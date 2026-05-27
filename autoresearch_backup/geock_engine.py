@@ -82,7 +82,7 @@ _DEFAULT_MODEL = _AUTORESEARCH_DIR / "geock_deep_trees_final.pkl"
 if _DEFAULT_MODEL.exists():
     MODEL_PATH = _DEFAULT_MODEL
 else:
-    MODEL_PATH = Path("WORK_DIR / geock_deep_trees_final.pkl")
+    MODEL_PATH = Path("geock_deep_trees_final.pkl")
 
 
 # ── Load Model ────────────────────────────────────────────────────────────────
