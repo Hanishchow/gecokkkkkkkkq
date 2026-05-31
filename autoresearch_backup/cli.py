@@ -33,7 +33,7 @@ def load_model():
     sys.stdout.flush()
 
     try:
-        model_path = Path("WORK_DIR / geock_model_final.pkl")
+        model_path = Path("geock_model_final.pkl")
         if not model_path.exists():
             print(f"{YELLOW}not found{RESET}")
             return None, "Model not found"

@@ -24,7 +24,7 @@ import os
 # ============================================================================
 
 CASF_DIR = Path("/mnt/c/Users/yakka/Downloads/CASF")
-MODEL_PATH = Path("WORK_DIR / geock_deep_trees_final.pkl")
+MODEL_PATH = Path("geock_deep_trees_final.pkl")
 RESULTS_DIR = Path("/mnt/c/Users/yakka/Desktop/CASF_Results")
 RESULTS_DIR.mkdir(exist_ok=True)
 
