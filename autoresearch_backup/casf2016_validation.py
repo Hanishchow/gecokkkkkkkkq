@@ -19,7 +19,7 @@ warnings.filterwarnings('ignore')
 CASf_2016_DIR = Path("/mnt/c/Users/yakka/Downloads/CASF-2016/CASF-2016")
 CORESET_DIR = CASf_2016_DIR / "coreset"
 CORESET_DAT = CASf_2016_DIR / "power_scoring" / "CoreSet.dat"
-MODEL_PATH = Path("WORK_DIR / geock_deep_trees_final.pkl")
+MODEL_PATH = Path("geock_deep_trees_final.pkl")
 
 
 def load_core_set():
@@ -327,7 +327,7 @@ def main():
         print(f"    Std error:   {mb['std_error']:.4f} pKd")
         print(f"    MAE:         {mb['mean_abs_error']:.4f} pKd")
     
-    output_path = Path("WORK_DIR / casf2016_predictions.csv")
+    output_path = Path("casf2016_predictions.csv")
     save_predictions(valid_complexes, predictions, output_path)
     
     print("\n" + "=" * 70)
