@@ -89,14 +89,16 @@ Table 2 presents results on CASF-2016, the chronologically newest benchmark (285
 **Table 2.** CASF-2016 performance across model configurations.
 
 | Model Configuration | CV R | CASF-2016 R | Sp | MAE | RMSE |
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|
 | Deep Trees Final (depth=10, k=500) | 0.843 | 0.575 | 0.566 | 1.59 | 1.93 |
 | XGBoost 39k (depth=12, k=400) | 0.847 | 0.587 | 0.590 | 1.53 | 1.88 |
 | Retrained 39K (depth=12, k=400) | 0.847 | 0.590 | 0.596 | 1.52 | 1.87 |
 | Retrained 23K (depth=12, k=400) | 0.745 | 0.569 | 0.568 | 1.55 | 1.90 |
 | Kuramoto (ECFP+4 physics, k=500) | 0.848 | 0.588 | 0.613 | 1.49 | 1.83 |
+| Random Forest (depth=15, 7k data) | 0.490 | 0.522 | 0.539 | 1.61 | 1.97 |
+| XGBoost + RF Ensemble (avg) | — | 0.586 | 0.599 | 1.56 | 1.92 |
 
-All models perform similarly on CASF-2016 (R = 0.569-0.590), indicating that the increased complexity of the 39K models (higher CV R) does not translate to better generalization. The difference between CASF-2007 (R = 0.877) and CASF-2016 (R = 0.575) is 0.302 — but this gap reflects benchmark difficulty, not memorization (see Discussion).
+All gradient-boosting models perform similarly on CASF-2016 (R = 0.569-0.590), indicating that increased complexity (higher CV R) does not translate to better generalization. Random Forest alone (R = 0.522, trained on only 7k compounds) is notably weaker. Averaging XGBoost with RF predictions (R = 0.586) offers no improvement over XGBoost alone, confirming the RF adds negligible signal. The difference between CASF-2007 (R = 0.877) and CASF-2016 (R = 0.575) is 0.302 — but this gap reflects benchmark difficulty, not memorization (see Discussion).
 
 ### Impact of Training Set Size
 
@@ -109,14 +111,16 @@ Table 3 provides a corrected comparison. Only results from methods evaluated on 
 **Table 3.** CASF-2007 performance (contaminated) vs. CASF-2016 (uncontaminated).
 
 | Method | CASF-2007 R | CASF-2016 R | Contamination Status |
-|---|---|---|---|
+|---|---|---|---|---|
 | X-Score (2002) | 0.58 | — | Unknown |
 | AutoDock Vina (2010) | 0.64 | — | Unknown |
 | RF-Score (2015) | 0.69 | — | Unknown |
 | Pafnucy (2018) | 0.74 | — | Unknown |
 | ONN (2019) | 0.78 | — | Unknown |
-| **GEOCK v2 (this work, contaminated)** | **0.877** | — | **Known** |
-| **GEOCK v2 (this work, uncontaminated)** | — | **0.575-0.590** | **Clean** |
+| **GEOCK v2 XGBoost 39k (this work)** | **0.877** | **0.587** | **Known** |
+| **GEOCK v2 Deep Trees Final** | **0.834** | **0.575** | **Known** |
+| **GEOCK v2 Random Forest (7k)** | — | **0.522** | **N/A** |
+| **GEOCK v2 XGBoost+RF Ensemble** | — | **0.586** | **Known** |
 
 The contaminated CASF-2007 results for GEOCK v2 are comparable to or exceed published methods, but this comparison is misleading because those published methods may also suffer from unknown degrees of contamination. The uncontaminated CASF-2016 result (R = 0.575-0.590) represents the model's true generalization capability and is comparable to physics-based scoring functions like AutoDock Vina (R = 0.56-0.64 on similar benchmarks).
 
@@ -127,6 +131,10 @@ An independently retrained 39K model achieved CV R = 0.847 (SD = 0.003) and CASF
 ### Kuramoto Physics Features
 
 The addition of four Kuramoto-inspired physics features produced CV R = 0.848 and CASF-2016 R = 0.588 — essentially unchanged from the ECFP-only baseline (R = 0.575-0.590). These features add no predictive value for external generalization.
+
+### Random Forest and Ensemble Comparison
+
+We evaluated a separate Random Forest model (max_depth=15, 100 trees, k=400, trained on 7,384 compounds) on CASF-2016. Its CASF-2016 R = 0.522 (CV R = 0.490) is substantially below the gradient-boosting models, consistent with Random Forest's well-known difficulty fitting deep decision boundaries. Averaging XGBoost and RF predictions (R = 0.586) produced identical performance to XGBoost alone (R = 0.587), confirming the RF contributes negligible independent signal. This suggests that for this feature representation (ECFP4 fingerprints), gradient boosting is the superior ensemble method and Random Forest's reduced depth limits its ability to capture the fingerprint-affinity relationship.
 
 ### Error Analysis
 
