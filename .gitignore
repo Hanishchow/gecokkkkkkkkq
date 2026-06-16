@@ -1,11 +1,18 @@
-# Large data files
-*.npy
-*.parquet
-*.tsv.gz
+# Byte-compiled
 __pycache__/
 *.pyc
 
-# Large model/training files (>10MB)
+# Large npy files (>200 MB, can't push to GitHub)
+autoresearch_backup/bindingdb_X.npy
+autoresearch_backup/bindingdb_X_new.npy
+autoresearch_backup/all24k_X.npy
+autoresearch_backup/all24k_X_pocket.npy
+
+# Parquet files (downloaded on-demand)
+autoresearch_backup/binddb_*.parquet
+autoresearch_backup/hf_cache/
+
+# Large model files (>30 MB, too big for git)
 autoresearch_backup/geock_final_all.pkl
 autoresearch_backup/geock_final_best.pkl
 autoresearch_backup/geock_final_dedup.pkl
@@ -14,36 +21,8 @@ autoresearch_backup/geock_phase4_ensemble.pkl
 autoresearch_backup/geock_phase5_best.pkl
 autoresearch_backup/lp_new_features_8k.pkl
 autoresearch_backup/merged_39k.pkl
-autoresearch_backup/phase1_analysis.pkl
-autoresearch_backup/geock_training_enhanced.pkl
-autoresearch_backup/geock_training_v4.pkl
-autoresearch_backup/geock_best_retrained.pkl
-autoresearch_backup/geock_best_retrained_23k.pkl
-autoresearch_backup/geock_v2_best.pkl
-autoresearch_backup/geock_v2_best_final.pkl
-autoresearch_backup/geock_v2_xgboost_39k.pkl
-autoresearch_backup/geock_v2_kuramoto.pkl
-autoresearch_backup/geock_v2_model_comp.pkl
-autoresearch_backup/geock_phase2_982dim.pkl
-autoresearch_backup/geock_phase3_1032dim.pkl
-autoresearch_backup/geock_phase3b_fullpocket.pkl
-autoresearch_backup/geock_phase1_pocket.pkl
-autoresearch_backup/chembl_v2.pkl
-autoresearch_backup/chembl_more.pkl
-autoresearch_backup/bindingdb_X.npy
-autoresearch_backup/bindingdb_X_new.npy
-autoresearch_backup/bindingdb_y.npy
-autoresearch_backup/bindingdb_y_new.npy
-autoresearch_backup/all24k_X.npy
-autoresearch_backup/all24k_X_pocket.npy
-autoresearch_backup/all24k_y.npy
-autoresearch_backup/phase2_X.npy
-autoresearch_backup/phase2_y.npy
-autoresearch_backup/X_enhanced.npy
-autoresearch_backup/binddb*.parquet
-autoresearch_backup/hf_cache/
+
+# Other ignores
+check_model_params.py
 autoresearch_backup/hybrid_*.pkl
 autoresearch_backup/hybrid_*.npy
-geock_training_enhanced.pkl
-geock_training_v4.pkl
-check_model_params.py
