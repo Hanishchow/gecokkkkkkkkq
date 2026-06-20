@@ -1,1 +1,1 @@
-{"action": "notify", "params": {"message": "hello from server"}, "timestamp": "2026-06-20T04:50:49Z"}
+{"action": "retry", "params": {"n_trees": 3000, "k_best": 800}, "timestamp": "2026-06-20T04:51:49Z"}
