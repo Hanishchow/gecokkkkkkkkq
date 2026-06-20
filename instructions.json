@@ -1,1 +1,1 @@
-{"action": "notify", "params": {"text": "{\"message\":\"hello"}, "timestamp": "2026-06-20T04:50:19Z"}
+{"action": "notify", "params": {"message": "hello from server"}, "timestamp": "2026-06-20T04:50:49Z"}
